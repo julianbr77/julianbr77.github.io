@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #ffffff; 
+    color: #3b3b3b;
+}
+
+header {
+    background-color: #595a5a;
+    padding: 1rem 0;
+    text-align: center;
+    color: #ffffff;
+    position: relative;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 3px solid #807f7f;
+    object-fit: cover;
+    margin-right: 15px;
+    cursor: pointer;
+    transition: 1ms;
+}
+
+.logo-text h1 {
+    font-size: 2rem;
+    margin: 0;
+    color: #ffffff;
+}
+
+.logo-text p {
+    margin: 5px 0 0;
+    font-style: italic;
+    color: #ffffff;
+}
+
+.login-container {
+    margin-bottom: 20px;
+}
+
+.login-container button {
+    background-color: #656668;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+    margin: 0 5px;
+    transition: background-color 0.3s ease;
+}
+
+.login-container button:hover {
+    background-color: #a1a1a1;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 15px;
+    border-radius: 10px;
+}
+
+header nav ul li a {
+    color: #dbdada;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #b5babe;
+}
+
+section {
+    padding: 2rem;
+    text-align: center;
+}
+
+#inicio {
+    background-color: #ffffff;
+    color: #333;
+    margin: 2rem;
+    padding: 1rem;
+    border-radius: 80px;
+    box-shadow: 0 0 10px rgba(131, 127, 127, 0.918);
+    border: 3px solid #d1d1d1;
+}
+
+#inicio button {
+    background-color: #656668;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    border-radius: 100px;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+#inicio button:hover {
+    background-color: #a1a1a1;
+}
+
+#misVision {
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.service {
+    background-color: #fff;
+    margin: 1rem 0;
+    padding: 1.5rem;
+    border-radius: 80px;
+    box-shadow: 0 0 15px rgba(131, 127, 127, 0.918);
+    transition: transform 0.3s ease;
+    border: 3px solid #d1d1d1;
+}
+
+.service:hover {
+    transform: translateY(-5px);
+}
+
+#contacto form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgb(185, 185, 185);
+}
+
+#contacto form label {
+    margin-top: 10px;
+    font-weight: bold;
+    width: 100%;
+    text-align: left;
+}
+
+#contacto form input,
+#contacto form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contacto form button {
+    background-color: #595a5a;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+#contacto form button:hover {
+    background-color: #6e6e6e;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    border-radius: 10px 10px 0 0;
+}
+.button {
+    display: inline-block;
+    background-color: #595a5a; /* Color del botón */
+    color: #ffffff; /* Color del texto */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none; /* Sin subrayado */
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #6e6e6e; /* Color al pasar el mouse */
+}
+.rating {
+    direction: rtl; /* Para que las estrellas se ordenen de derecha a izquierda */
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.rating input {
+    display: none; /* Ocultar los radios */
+}
+
+.rating label {
+    font-size: 2rem;
+    color: #ddd; /* Color de las estrellas vacías */
+    cursor: pointer;
+}
+
+.rating input:checked ~ label {
+    color: #f7d106; /* Color de las estrellas llenas */
+}
+
+.rating label:hover,
+.rating label:hover ~ label {
+    color: #f7d106; /* Color de las estrellas al pasar el mouse */
+}

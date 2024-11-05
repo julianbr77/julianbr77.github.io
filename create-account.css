@@ -1,0 +1,65 @@
+/* Estilos específicos para la página de creación de cuentas */
+
+body {
+    background-color: #f4f4f4; /* Color de fondo suave */
+}
+
+header {
+    background-color: #595a5a; /* Mismo color de fondo que en la página principal */
+    color: #ffffff; /* Texto blanco */
+    padding: 1rem 0; /* Espaciado superior e inferior */
+    text-align: center; /* Alineación centrada */
+}
+
+h1 {
+    font-size: 2.5rem; /* Tamaño de fuente grande para el título */
+    margin-bottom: 1rem; /* Margen inferior */
+}
+
+section {
+    padding: 2rem; /* Espaciado interno */
+    background-color: #fff; /* Fondo blanco para la sección del formulario */
+    border-radius: 10px; /* Bordes redondeados */
+    max-width: 600px; /* Ancho máximo del formulario */
+    margin: 2rem auto; /* Centrando el formulario */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+label {
+    margin-top: 10px; /* Espacio superior */
+    font-weight: bold; /* Texto en negrita */
+    display: block; /* Hacer que las etiquetas ocupen el ancho completo */
+}
+
+input {
+    width: 100%; /* Ancho completo */
+    padding: 10px; /* Espaciado interno */
+    margin-top: 5px; /* Espacio superior */
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+button {
+    background-color: #595a5a; /* Color de fondo del botón */
+    color: #ffffff; /* Texto blanco */
+    border: none; /* Sin borde */
+    padding: 10px 20px; /* Espaciado interno */
+    cursor: pointer; /* Cambiar el cursor al pasar el mouse */
+    font-size: 1rem; /* Tamaño de fuente del botón */
+    border-radius: 5px; /* Bordes redondeados */
+    margin-top: 15px; /* Margen superior */
+    transition: background-color 0.3s ease; /* Transición suave para el color de fondo */
+}
+
+button:hover {
+    background-color: #6e6e6e; /* Color de fondo al pasar el mouse */
+}
+
+footer {
+    background-color: #333; /* Color de fondo del pie de página */
+    color: #fff; /* Texto blanco */
+    text-align: center; /* Alineación centrada */
+    padding: 1rem 0; /* Espaciado superior e inferior */
+    margin-top: 2rem; /* Margen superior */
+    border-radius: 10px 10px 0 0; /* Bordes redondeados en la parte superior */
+}

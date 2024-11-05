@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comentarios - Negsystem</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Comentarios de los Clientes</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#comentarios">Dejar un Comentario</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="comentarios">
+        <h2>Deja tu Comentario</h2>
+        <form id="commentForm">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="servicio">Servicio:</label>
+            <select id="servicio" name="servicio" required>
+                <option value="">Selecciona un servicio</option>
+                <option value="Internet de Alta Velocidad">Internet de Alta Velocidad</option>
+                <option value="Internet Fibra Óptica">Internet Fibra Óptica</option>
+                <option value="Internet Antena Punto a Punto">Internet Antena Punto a Punto</option>
+            </select>
+
+            <label for="calificacion">Calificación:</label>
+            <div class="rating">
+                <input type="radio" id="star1" name="calificacion" value="5" required>
+                <label for="star1" class="star">&#9733;</label>
+                <input type="radio" id="star2" name="calificacion" value="4">
+                <label for="star2" class="star">&#9733;</label>
+                <input type="radio" id="star3" name="calificacion" value="3">
+                <label for="star3" class="star">&#9733;</label>
+                <input type="radio" id="star4" name="calificacion" value="2">
+                <label for="star4" class="star">&#9733;</label>
+                <input type="radio" id="star5" name="calificacion" value="1">
+                <label for="star5" class="star">&#9733;</label>
+            </div>
+
+            <label for="comentario">Comentario:</label>
+            <textarea id="comentario" name="comentario" required></textarea>
+
+            <button type="submit">Enviar Comentario</button>
+        </form>
+    </section>
+
+    <section id="comentarios-publicados">
+        <h2>Comentarios Recientes</h2>
+        <div id="lista-comentarios"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Negsystem Telecomunicaciones. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="comentarios.js"></script>
+</body>
+</html>
