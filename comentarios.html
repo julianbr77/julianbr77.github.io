@@ -8,7 +8,13 @@
 </head>
 <body>
     <header>
-        <h1>Comentarios de los Clientes</h1>
+        <div class="logo-container">
+            <img src="https://www.ibm.com/analytics/es/es/industry/images/Telcom-Leadspace-Antenna-Data-1000x700.gif" alt="Negsystem Logo" class="logo">
+            <div class="logo-text">
+                <h1>Negsystem</h1>
+                <p>Telecomunicaciones de Confianza</p>
+            </div>
+        </div>
         <nav>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
@@ -17,45 +23,79 @@
         </nav>
     </header>
 
-    <section id="comentarios">
-        <h2>Deja tu Comentario</h2>
-        <form id="commentForm">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required>
+    <main>
+        <section id="comentarios">
+            <h2>Deja tu Comentario</h2>
+            <form id="commentForm">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
 
-            <label for="servicio">Servicio:</label>
-            <select id="servicio" name="servicio" required>
-                <option value="">Selecciona un servicio</option>
-                <option value="Internet de Alta Velocidad">Internet de Alta Velocidad</option>
-                <option value="Internet Fibra Óptica">Internet Fibra Óptica</option>
-                <option value="Internet Antena Punto a Punto">Internet Antena Punto a Punto</option>
-            </select>
+                <label for="servicio">Servicio:</label>
+                <select id="servicio" name="servicio" required>
+                    <option value="">Selecciona un servicio</option>
+                    <option value="Internet de Alta Velocidad">Internet de Alta Velocidad</option>
+                    <option value="Internet Fibra Óptica">Internet Fibra Óptica</option>
+                    <option value="Internet Antena Punto a Punto">Internet Antena Punto a Punto</option>
+                </select>
 
-            <label for="calificacion">Calificación:</label>
-            <div class="rating">
-                <input type="radio" id="star1" name="calificacion" value="5" required>
-                <label for="star1" class="star">&#9733;</label>
-                <input type="radio" id="star2" name="calificacion" value="4">
-                <label for="star2" class="star">&#9733;</label>
-                <input type="radio" id="star3" name="calificacion" value="3">
-                <label for="star3" class="star">&#9733;</label>
-                <input type="radio" id="star4" name="calificacion" value="2">
-                <label for="star4" class="star">&#9733;</label>
-                <input type="radio" id="star5" name="calificacion" value="1">
-                <label for="star5" class="star">&#9733;</label>
+                <label for="calificacion">Calificación:</label>
+                <div class="rating">
+                    <input type="radio" id="star5" name="calificacion" value="5" required>
+                    <label for="star5" class="star">&#9733;</label>
+                    <input type="radio" id="star4" name="calificacion" value="4">
+                    <label for="star4" class="star">&#9733;</label>
+                    <input type="radio" id="star3" name="calificacion" value="3">
+                    <label for="star3" class="star">&#9733;</label>
+                    <input type="radio" id="star2" name="calificacion" value="2">
+                    <label for="star2" class="star">&#9733;</label>
+                    <input type="radio" id="star1" name="calificacion" value="1">
+                    <label for="star1" class="star">&#9733;</label>
+                </div>
+
+                <label for="comentario">Comentario:</label>
+                <textarea id="comentario" name="comentario" required></textarea>
+
+                <button type="submit">Enviar Comentario</button>
+            </form>
+        </section>
+
+        <section id="comentarios-publicados">
+            <h2>Comentarios Recientes</h2>
+            <div id="lista-comentarios">
+                <!-- Comentarios Ficticios -->
+                <div class="comentario">
+                    <p><strong>Laura Pérez</strong></p>
+                    <p><strong>Servicio:</strong> Internet de Alta Velocidad</p>
+                    <p><strong>Calificación:</strong> ⭐⭐⭐⭐⭐</p>
+                    <p>"Excelente servicio, la conexión es muy estable y rápida. Ideal para el trabajo desde casa."</p>
+                </div>
+                <div class="comentario">
+                    <p><strong>Andrés Gómez</strong></p>
+                    <p><strong>Servicio:</strong> Internet Fibra Óptica</p>
+                    <p><strong>Calificación:</strong> ⭐⭐⭐⭐</p>
+                    <p>"La velocidad es buena, aunque tuve algunos problemas al principio. Sin embargo, el soporte técnico fue muy eficiente."</p>
+                </div>
+                <div class="comentario">
+                    <p><strong>Mariana Ríos</strong></p>
+                    <p><strong>Servicio:</strong> Internet Antena Punto a Punto</p>
+                    <p><strong>Calificación:</strong> ⭐⭐⭐</p>
+                    <p>"El servicio es aceptable, aunque a veces presenta fallas en días de lluvia. Aún así, es mejor que otras opciones en la zona."</p>
+                </div>
+                <div class="comentario">
+                    <p><strong>Juan Martínez</strong></p>
+                    <p><strong>Servicio:</strong> Internet de Alta Velocidad</p>
+                    <p><strong>Calificación:</strong> ⭐⭐⭐⭐⭐</p>
+                    <p>"La instalación fue rápida y la calidad del internet ha sido muy buena, perfecto para toda la familia."</p>
+                </div>
+                <div class="comentario">
+                    <p><strong>Sofía Herrera</strong></p>
+                    <p><strong>Servicio:</strong> Internet Fibra Óptica</p>
+                    <p><strong>Calificación:</strong> ⭐⭐⭐⭐⭐</p>
+                    <p>"¡Muy satisfecha! La velocidad es excelente y nunca he tenido problemas de conexión. Muy recomendable."</p>
+                </div>
             </div>
-
-            <label for="comentario">Comentario:</label>
-            <textarea id="comentario" name="comentario" required></textarea>
-
-            <button type="submit">Enviar Comentario</button>
-        </form>
-    </section>
-
-    <section id="comentarios-publicados">
-        <h2>Comentarios Recientes</h2>
-        <div id="lista-comentarios"></div>
-    </section>
+        </section>
+    </main>
 
     <footer>
         <p>&copy; 2024 Negsystem Telecomunicaciones. Todos los derechos reservados.</p>
