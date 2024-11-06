@@ -235,3 +235,402 @@ footer {
 .rating label:hover ~ label {
     color: #f7d106; /* Color de las estrellas al pasar el mouse */
 }
+/* Centrar y ajustar el tamaño de las imágenes en las secciones de misión y visión */
+section img {
+    max-width: 300px; /* Ajusta el tamaño máximo de la imagen */
+    width: 100%; /* La imagen se ajustará a su contenedor */
+    display: block;
+    margin: 0 auto; /* Centra la imagen */
+    padding-top: 15px; /* Añade un espacio superior si se desea */
+}
+/* ... (Estilos existentes) ... */
+
+/* Estilos para la sección de comentarios publicados */
+#comentarios-publicados {
+    padding: 2rem;
+    background-color: #ffffff;
+    border: 1px solid #d1d1d1;
+    border-radius: 10px;
+    margin: 2rem auto;
+    max-width: 800px; /* Aumenta el ancho máximo si es necesario */
+    box-shadow: 0 0 10px rgba(131, 127, 127, 0.5);
+}
+
+#lista-comentarios {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinear los comentarios a la izquierda */
+}
+
+.comentario {
+    background-color: #f9f9f9; /* Fondo gris claro para los comentarios */
+    border: 1px solid #ccc; /* Borde gris */
+    padding: 15px;
+    margin-bottom: 15px;
+    width: 100%; /* Asegura que el comentario ocupe todo el ancho disponible */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+.comentario p {
+    margin: 5px 0; /* Espaciado entre párrafos */
+}
+
+/* Estilos para el formulario de comentarios */
+#comentarios form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinear el formulario a la izquierda */
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgb(185, 185, 185);
+}
+
+#comentarios form label {
+    margin-top: 10px;
+    font-weight: bold;
+    width: 100%;
+    text-align: left;
+}
+
+#comentarios form input,
+#comentarios form select,
+#comentarios form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#comentarios form button {
+    background-color: #595a5a;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+#comentarios form button:hover {
+    background-color: #6e6e6e;
+}
+
+/* Estilos para las estrellas de calificación */
+.rating {
+    direction: rtl; /* Orden de derecha a izquierda */
+    display: flex;
+    justify-content: flex-start; /* Alinear a la izquierda */
+    margin: 10px 0;
+}
+
+.rating input {
+    display: none; /* Ocultar los radios */
+}
+
+.rating label {
+    font-size: 2rem;
+    color: #ddd; /* Color de las estrellas vacías */
+    cursor: pointer;
+}
+
+.rating input:checked ~ label {
+    color: #f7d106; /* Color de las estrellas llenas */
+}
+
+.rating label:hover,
+.rating label:hover ~ label {
+    color: #f7d106; /* Color de las estrellas al pasar el mouse */
+}
+/* Contenedor de botones de autenticación */
+.auth-buttons {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    gap: 20px; /* Espacio entre botones */
+    margin-top: 20px; /* Separación superior */
+  }
+  
+  /* Estilo para botones dentro de auth-buttons */
+  .auth-buttons button {
+    background-color: #004D40; /* Color de fondo */
+    color: #FFFFFF; /* Color de texto */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px; /* Tamaño del botón */
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Efectos de hover y active */
+  .auth-buttons button:hover {
+    background-color: #00695C; /* Color al pasar el cursor */
+  }
+  
+  .auth-buttons button:active {
+    background-color: #003D33; /* Color al hacer clic */
+  }
+  
+  #map {
+    height: 400px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+#pagos {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#pagos h2 {
+    text-align: center;
+    color: #333;
+}
+
+.form-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#payment-result {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+#payment-result p {
+    font-weight: bold;
+}
+
+#payment-result .success {
+    color: green;
+}
+
+#payment-result .error {
+    color: red;
+}
+/* Estilo general del cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo del título */
+h2 {
+    margin-top: 30px;
+    color: #004D40;
+}
+
+/* Estilo del formulario */
+#payment-form {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px 30px;
+    max-width: 400px;
+    width: 100%;
+}
+
+/* Estilo de las etiquetas */
+#payment-form label {
+    font-weight: bold;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Estilo de los campos de entrada */
+#payment-form input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Estilo del botón de pago */
+#pay-button {
+    background-color: #004D40;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#pay-button:hover {
+    background-color: #00695C;
+}
+
+/* Mensaje de resultado de pago */
+#payment-result {
+    margin-top: 20px;
+    font-weight: bold;
+}
+/* Estilos para los enlaces de navegación */
+.nav-button {
+    background-color: #595a5a; /* Color de fondo */
+    color: #ffffff; /* Color del texto */
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none; /* Sin subrayado */
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    font-size: 1rem;
+}
+
+/* Efecto al pasar el cursor */
+.nav-button:hover {
+    background-color: #6e6e6e;
+}
+
+/* Alineación de los elementos en el menú */
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 10px; /* Ajuste de espacio entre los elementos */
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background-color: #004D40;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    max-width: 800px;
+    width: 100%;
+}
+
+.plan {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.plan h2 {
+    color: #004D40;
+}
+
+.plan ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+}
+/* Estilo para cada noticia en un recuadro */
+.noticia {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.noticia h3 {
+    color: #333;
+    font-size: 1.4em;
+    margin: 0 0 10px 0;
+}
+
+.noticia .fecha {
+    color: #777;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
+.noticia p {
+    color: #555;
+    line-height: 1.6;
+}
