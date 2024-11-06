@@ -6,6 +6,8 @@
     <title>Negsystem S.A.S</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/x-icon" href="https://www.ibm.com/analytics/es/es/industry/images/Telcom-Leadspace-Antenna-Data-1000x700.gif">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 </head>
 <body>
     
@@ -17,22 +19,31 @@
                 <p>Telecomunicaciones de Confianza</p>
             </div>
         </div>
+        <div class="auth-buttons">
+        <button onclick="window.location.href='login.html'">Login</button>
+        <button onclick="window.location.href='create-account.html'">Crear cuenta</button>
+        
+        </div>
         <nav>
             <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#nosotros">Nosotros</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-                <li><a href="comentarios.html" class="button">Comentarios</a></li> <!-- Botón de comentarios -->
+                <li><a href="#inicio" class="nav-button">Inicio</a></li>
+                <li><a href="#servicios" class="nav-button">Servicios</a></li>
+                <li><a href="#nosotros" class="nav-button">Nosotros</a></li>
+                <li><a href="#contacto" class="nav-button">Contacto</a></li>
+                <li><a href="comentarios.html" class="nav-button">Comentarios</a></li>
+                <li><a href="pagos.html" class="nav-button">Pagos</a></li>
+                <li><a href="noticias.html" class="nav-button">Noticias</a></li>
             </ul>
         </nav>
+        
     </header>
 
     <section id="inicio">
         <h2>Bienvenido a Negsystem</h2>
         <p>Conectamos a las personas con el futuro de las telecomunicaciones.</p>
-        <button id="learnMoreBtn">Saber más</button>
+        <button id="learnMoreBtn" onclick="window.location.href='mision-vision.html'">Saber más</button>
     </section>
+    
 
     <section id="servicios">
         <h2>Nuestros Servicios</h2>
@@ -53,6 +64,7 @@
     <section id="nosotros">
         <h2>Sobre Nosotros</h2>
         <p>Somos líderes en telecomunicaciones, ofreciendo servicios de calidad y conectando a las personas con lo que más les importa.</p>
+        <button onclick="window.location.href='planes.html'">Ver los planes</button>
     </section>
 
     <section id="contacto">
@@ -60,18 +72,27 @@
         <form id="contactForm">
             <label for="nombre">Nombre:</label>
             <input type="text" id="nombre" name="nombre" required>
-
+    
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
-
+    
             <label for="mensaje">Mensaje:</label>
             <textarea id="mensaje" name="mensaje" required></textarea>
-
+    
             <button type="submit">Enviar</button>
         </form>
         <a href="comentarios.html" class="button">Ver Comentarios</a> <!-- Botón para ver comentarios -->
+        
+        <h2>Busca tu dirección</h2>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Ingresa una dirección">
+            <button id="searchButton">Buscar</button>
+        </div>
+    
+        <!-- Contenedor para el mapa -->
+        <div id="map"></div>
     </section>
-
+    
     <footer>
         <p>&copy; 2024 Negsystem Telecomunicaciones. Todos los derechos reservados.</p>
     </footer>
